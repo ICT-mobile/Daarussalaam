@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مكتبة دار السلام الإسلامية - Home</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#008080; padding:20px; text-align:center; color:white; }
+    nav { background:#006666; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+
+    footer { background:#006666; color:white; text-align:center; padding:15px; margin-top:40px; position:relative; }
+    .whatsapp { position:absolute; right:20px; top:15px; }
+    .whatsapp img { width:35px; }
+
+    /* HERO */
+    .hero-section {
+        background-image: url('library.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        color: white;
+    }
+    .hero-section::before {
+        content:"";
+        position:absolute;
+        top:0; left:0; right:0; bottom:0;
+        background:rgba(0,0,0,0.5);
+        z-index:1;
+    }
+    .hero-content {
+        position:relative;
+        z-index:2;
+    }
+    .hero-content h1 {
+        font-size: 2.7em;
+        color: #ffd700;
+        margin-bottom: 10px;
+    }
+    .hero-content p {
+        width:80%;
+        margin:auto;
+        font-size:1.2em;
+    }
+
+    /* Featured Books */
+    .featured {
+        width:90%;
+        margin:30px auto;
+        text-align:center;
+    }
+    .featured h2 { color:#006666; margin-bottom:20px; }
+    .book-grid {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+    }
+    .book {
+        background:white;
+        width:150px;
+        padding:10px;
+        border-radius:10px;
+        border:1px solid #ccc;
+    }
+    .book img {
+        width:100%;
+        border-radius:5px;
+    }
+
+    /* Categories */
+    .categories { 
+        display:flex; 
+        flex-wrap:wrap; 
+        justify-content:center; 
+        gap:15px; 
+        margin-top:20px; 
+    }
+    .box {
+        background:#008080;
+        padding:15px 25px;
+        color:white;
+        border-radius:5px;
+        font-weight:bold;    
+    }
+    .categories a {
+    text-decoration: none;
+    color: white;
+}
+
+    /* Gallery */
+    .gallery {
+        width:90%;
+        margin:30px auto;
+        text-align:center;
+    }
+    .gallery-grid {
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+    .gallery-grid img {
+        width:160px;
+        height:200px;
+        object-fit:cover;
+        border-radius:8px;
+        border:1px solid #ccc;
+    }
+
+    /* Testimonials */
+    .reviews {
+        width:80%;
+        margin:40px auto;
+        text-align:center;
+    }
+    .review-box {
+        background:white;
+        padding:20px;
+        margin:10px 0;
+        border-radius:10px;
+        border:1px solid #ccc;
+    }
+
+    /* CTA */
+    .cta {
+        text-align:center;
+        margin:40px 0;
+    }
+    .cta a {
+        display:inline-block;
+        margin:10px;
+        padding:15px 30px;
+        background:#008b5a;
+        color:white;
+        border-radius:8px;
+        text-decoration:none;
+        font-size:1.1em;
+    }
+  </style>
+
+</head>
+<body>
+    <div id="welcomeBox" style="
+display:none;
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:#008080;
+color:white;
+padding:15px 25px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+z-index:999;">
+📚 مرحباً بك في مكتبة دار السلام الإسلامية  
+✨ اكتشف أفضل الكتب الآن
+</div>
+    
+    
+    
+
+<!-- HERO -->
+<header class="hero-section">
+    <div class="hero-content">
+        <h1>مكتبة دار السلام الإسلامية</h1>
+        <p>أفضل الكتب العربية والإسلامية — قرآن، حديث، فقه، عقيدة، وتعليم اللغة العربية.</p>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+
+<!-- CATEGORIES -->
+<section style="text-align:center;">
+    <h2>الأقسام الرئيسية</h2>
+    <div class="categories">
+   <a href="القرآن الكريم.html" class="box">القرآن الكريم وكتب التفسير وعلوم القرآن</a>
+   <a href="النحو العربي.html" class="box">كتب اللغة العربية (نحو + بلاغة + صرف)</a>
+   <a href="الحديث.html" class="box">الحديث</a>
+   <a href="الفقه.html" class="box">الفقه</a>
+   <a href="العقيدة.html" class="box">العقيدة</a>
+   <a href="السيرة.html" class="box">كتب عامة / تربية / سير</a>
+   <a href="تعليم اللغة العربية.html" class="box">تعليم اللغة العربية</a>
+    </div>
+</section>
+
+
+<!-- FEATURED BOOKS -->
+<section class="featured">
+    
+    <h2>الكتب المميزة</h2>
+    <div class="book-grid">
+        <div class="book">
+            <img src="القرآن الكريم.jpg">
+            <p>القرآن الكريم</p>
+        </div>
+        <div class="book">
+            <img src="رياض الصالحين.jpg">
+            <p>رياض الصالحين</p>
+        </div>
+        <div class="book">
+            <img src="النحو التطبيقي.jpg">
+            <p>النحو التطبيقي</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA -->
+<section class="cta">
+    <a href="store.html">زيارة المتجر</a>
+    <a href="store.html">اطلب الآن</a>
+</section>
+
+
+
+<!-- QURAN VERSE -->
+<section style="text-align:center; margin-top:30px;">
+    <h2>آية قرآنية</h2>
+    <p style="font-size:20px;">"اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ" – سورة العلق</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+    <h2>آراء العملاء</h2>
+    <div class="review-box">⭐⭐⭐⭐⭐<br> خدمة ممتازة وسرعة في التوصيل.</div>
+    <div class="review-box">⭐⭐⭐⭐⭐<br> حصلت على مصحف المدينة بجودة عالية.</div>
+</section>
+
+
+<footer>
+    <p>&copy; 2026 مكتبة دار السلام الإسلامية</p>
+    <a class="whatsapp" href="https://wa.me/2347057002272" target="_blank">
+      <img src="whatsapp.png">
+    </a>
+</footer>
+
+
+<script>
+if (!localStorage.getItem("welcomeShown")) {
+    let box = document.getElementById("welcomeBox");
+    box.style.display = "block";
+
+    setTimeout(() => {
+        box.style.display = "none";
+    }, 4000);
+
+    localStorage.setItem("welcomeShown", "true");
+}
+</script>
+
+</body>
+</html>

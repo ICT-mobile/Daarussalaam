@@ -1,0 +1,816 @@
+<!-- store.html (Store Page 1) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Store - مكتبة دار السلام الإسلامية (Page 1)</title>
+  <style>
+    body { font-family: Arial; margin:0; padding:0; background:#f9f9f9; }
+    header { background:#008080; padding:20px; text-align:center; color:white; }
+    nav { background:#006666; padding:10px; text-align:center; }
+    nav a { color:white; margin:0 15px; text-decoration:none; font-weight:bold; }
+    table { width:90%; margin:20px auto; border-collapse:collapse; background:white; }
+    table, th, td { border:1px solid #ccc; }
+    th, td { padding:10px; text-align:center; }
+    img { width:80px; height:auto; }
+    footer { background:#006666; color:white; text-align:center; padding:15px; margin-top:40px; position:relative; }
+    .whatsapp { position:absolute; right:20px; top:15px; }
+    .whatsapp img { width:35px; }
+
+    .order-btn {
+      display:inline-block;
+      padding:6px 10px;
+      background:#008080;
+      color:white;
+      text-decoration:none;
+      border-radius:5px;
+      font-size:14px;
+    }
+    .order-btn:hover {
+      background:#005f5f;
+    }
+
+    .pagination {
+      text-align:center;
+      margin:25px 0;
+    }
+    .pagination a {
+      padding:8px 12px;
+      margin:0 3px;
+      background:#ccc;
+      color:#000;
+      text-decoration:none;
+      border-radius:4px;
+      font-weight:bold;
+      font-size:14px;
+    }
+    .pagination a.active {
+      background:#008080;
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>Store </h2>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="store.html">Store</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+
+
+  <h1 style="text-align:center; margin-top:30px;">Available Books</h1>
+
+
+<div style="text-align:center; margin-top:20px;">
+  <input type="text" id="searchInput" placeholder="🔍 Search books..." 
+style="padding:12px; width:60%; max-width:400px; border:2px solid #008080; border-radius:25px; outline:none;">
+<p id="noResult" style="text-align:center; color:red; display:none;">
+لا توجد نتائج
+</p>
+</div>
+
+
+  <table>
+    <tr>
+      <th>Book Name</th>
+      <th>Picture</th>
+      <th>Order</th>
+    </tr>
+
+    <tr>
+      <td>القرآن االكريم (Qur'an)</td>
+      <td><img src="القرآن الكريم.jpg" alt="Qur'an"></td>
+      <td> <a href="order.html?book=Qur'an (Madina Mushaf)" class="order-btn">Order</a> </td>
+    </tr>
+    
+    
+    <tr>
+      <td>صحيح البخاري  (Sahih ul Bukaari) <div></div></td>
+      <td><img src="صحيح البخاري.jpg" alt="صحيح البخاري"></td>
+      <td> <a href="order.html?book=صحيح البخاري" class="order-btn">Order</a> </td>
+    </tr>
+    
+    
+    <tr>
+      <td>صحيح مسلم (Sahih Muslim)</td>
+      <td><img src="صحيح مسلم.jpg" alt="صحيح مسلم"></td>     <td> <a href="order.html?book=صحيح مسلم" class="order-btn">Order</a> </td>
+    </tr>
+    
+    
+    <tr>
+      <td>تفسير القرآن العظيم</td>
+      <td><img src="تفسير القرآن العظيم.jpg" alt="تفسير القرآن العظيم"></td>
+      <td> <a href="order.html?book=تفسير القرآن العظيم" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td> كيف تتقن النحو (Kaifa tutkin ul nahw) </td>
+      <td><img src="كيف تتقن النحو.jpg" alt="كيف تتقن النحو"></td>
+      <td> <a href="order.html?book=كيف تتقن النحو " class="order-btn">Order</a> </td>
+    </tr>
+    
+    
+    <tr>
+      <td>كيف تتقن الصرف(kaifa tutkin ul sorf)</td>
+      <td><img src="كيف تتقن الصرف.jpg" alt="كيف تتقن الصرف"></td>
+ <td> <a href="order.html?book=كيف تتقن الصرف" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td>كيف تتقن البلاغة(kaifa tutkin ul balaagoh)</td>
+      <td><img src="كيف تتقن البلاغة.jpg" alt="كيف تتقن البلاغة"></td>
+ <td> <a href="order.html?book=كيف تتقن البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+        <tr>
+      <td>كيف تتقن الأجرومية(kaifa tutkin ul ajruumiyyah)</td>
+      <td><img src="كيف تتقن الأجرومية.jpg" alt="كيف تتقن الأجرومية"></td>
+ <td> <a href="order.html?book=كيف تتقن الأجرومية" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+        <tr>
+      <td>كيف تتقن الإملاء(kaifa tutkin ul imlaa)</td>
+      <td><img src="كيف تتقن الإملاء.jpg" alt="كيف تتقن الإملاء"></td>
+ <td> <a href="order.html?book=كيف تتقن الإملاء" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td>كيف تتقن العروض(kaifa tutkin ul aruud)</td>
+      <td><img src="كيف تتقن العروض.jpg" alt="كيف تتقن العروض"></td>
+ <td> <a href="order.html?book=كيف تتقن العروض" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td>جامع الدروس اللغة(jaamih duruus loga)</td>
+      <td><img src="جامع الدروس اللغة.jpg" alt="جامع الدروس اللغة"></td>
+ <td> <a href="order.html?book=جامع الدروس اللغة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+       <tr>
+      <td>النحو الكافي(an nahw ul kaafi)</td>
+      <td><img src="النحو الكافي.jpg" alt="النحو الكافي"></td>
+ <td> <a href="order.html?book=النحو الكافي" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>النحو التطبيقي(an nahw ul tatbeekee)</td>
+      <td><img src="النحو التطبيقي.jpg" alt="النحو التطبيقي"></td>
+ <td> <a href="order.html?book=النحو التطبيقات" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>القاموس المحيط(al qaamus ul muheet)</td>
+      <td><img src="قاموس المحيط.jpg" alt="القاموس المحيط"></td>
+ <td> <a href="order.html?book=القاموس المحيط" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>النحو الوافي(an nahw ul waafi)</td>
+      <td><img src="النحو الوافي.jpg" alt="النحو الوافي"></td>
+ <td> <a href="order.html?book=النحو الوافي" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>التطبيق النحوي(at tatbeeq an nahwi)</td>
+      <td><img src="التطبيق النحوي.jpg" alt="التطبيق النحوي"></td>
+ <td> <a href="order.html?book=التطبيق النحوي" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>مختار الصحاح(muktaar sihaah)</td>
+      <td><img src="مختار الصحاح.jpg" alt="مختار الصحاح"></td>
+ <td> <a href="order.html?book=مختار الصحاح" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+     <tr>
+      <td>أساس البلاغة(Asaas ul balaagah)</td>
+      <td><img src="أساس البلاغة.jpg" alt="أساس البلاغة"></td>
+ <td> <a href="order.html?book=أساس البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td>أوضح المسالك إلى ألفية ابن مالك(aodohu ul masaalik)</td>
+      <td><img src="أوضح المسالك.jpg" alt="أوضح المسالك إلى ألفية ابن مالك"></td>
+ <td> <a href="order.html?book=أوضح المسالك إلى ألفية ابن مالك" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>  الكافي في شرح ألفية ابن مالك(alkaafi fee sharhi alfiya)</td>
+      <td><img src="الكافي في شرح ألفية.jpg" alt="الكافي في شرح ألفية ابن مالك"></td>
+ <td> <a href="order.html?book=النحو الكافي" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>شرح ألفية ابن مالك للعثيمين(sharhu alfiya l-uthaimin)</td>
+      <td><img src="شرح ألفية ابن مالك للعثيمين.jpg" alt="شرح ألفية ابن مالك للعثيمين"></td>
+ <td> <a href="order.html?book=شرح ألفية بن مالك لعثيمين" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>شرح ابن عقيل على ألفية بن مالك(an nahw ul kaafi)</td>
+      <td><img src="شرح ابن عقيل.jpg" alt="شرح ابن عقيل على ألفية ابن مالك"></td>
+ <td> <a href="order.html?book=شرح ابن عقيل على ألفية ابن مالك" class="order-btn">Order</a> </td> 
+    </tr>
+
+
+ <tr>
+      <td>مغني اللبيب عن كتب الأعاريب(mugnee labeeb)</td>
+      <td><img src="مغني اللبيب.jpg" alt="مغني اللبيب"></td>
+ <td> <a href="order.html?book=مغني اللبيب عن كتب الأعاريب" class="order-btn">Order</a> </td> 
+    </tr>
+
+
+ <tr>
+      <td>الصرف الكافي(as sorf ul kaafi)</td>
+      <td><img src="الصرف الكافي.jpg" alt="الصرف الكافي"></td>
+ <td> <a href="order.html?book=الصرف الكافي" class="order-btn">Order</a> </td> 
+    </tr>
+
+
+ <tr>
+      <td>النحو الواضح(an nahw ul waadih)</td>
+      <td><img src="النحو الواضح.jpg" alt="النحو الواضح"></td>
+ <td> <a href="order.html?book=النحو الواضح" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>شرح دروس البلاغة(sharhu duruus ul balaagah)</td>
+      <td><img src="شرح دروس البلاغة.jpg" alt="شرح دروس البلاغة"></td>
+ <td> <a href="order.html?book=شرح دروس البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td> الكافي في البلاغة(al kaafi fil balaagah)</td>
+      <td><img src="الكافي في البلاغة.jpg" alt="الكافي في البلاغة"></td>
+ <td> <a href="order.html?book=الكافي في البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>البلاغة الواضحة(al balaagat ul waadiha)</td>
+      <td><img src="البلاغة الواضحة.jpg" alt="البلاغة الواضحة"></td>
+ <td> <a href="order.html?book=البلاغة الواضحة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+     <tr>
+      <td>مقامات الحريري(moqaamaat ul hareeri)</td>
+      <td><img src="مقامات الحريري.jpg" alt="مقامات الحريري"></td>
+ <td> <a href="order.html?book=مقامات الحريري" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    
+    <tr>
+      <td>بلوغ المرام(buluug ul maraam)</td>
+      <td><img src="بلوغ المرام.jpg" alt="بلوغ المرام"></td>
+ <td> <a href="order.html?book=بلوغ المرام" class="order-btn">Order</a> </td> 
+    </tr>
+
+<tr>
+  <td> سبل السلام (sublu salaam)</td>
+  <td><img src="سبل السلام.jpg"></td>
+  <td><a href="order.html?book=سبل السلام" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td> (ar roheeq ul maktuum)الرحيق المختوم</td>
+  <td><img src="الرحيق المختوم.jpg"></td>
+  <td><a href="order.html?book=الرحيق المختوم" class="order-btn">Order</a></td>
+</tr>
+
+
+<tr>
+  <td>فتح المجيد (fat ul majeed)</td>
+  <td><img src="فتح المجيد.jpg"></td>
+  <td><a href="order.html?book=فتح المجيد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>(riyad us saliheen)رياض الصالحين</td>
+  <td><img src="رياض الصالحين.jpg"></td>
+  <td><a href="order.html?book=رياض الصالحين" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>مختصر سيرة الرسول (muktasor swerat ul Rosuul)</td>
+  <td><img src="مختصر سيرة الرسول.jpg"></td>
+  <td><a href="order.html?book=مختصر سيرة الرسول" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح العقيدة الواسطية (sharh ul aqeedat il waasitiyah)</td>
+  <td><img src="شرح العقيدة الواسطية.jpg"></td>
+  <td><a href="order.html?book=شرح العقيدة الواسطية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>اللؤلؤ المرجان (al lu'u lu ul marjaan)</td>
+  <td><img src="اللؤلؤ المرجان.jpg"></td>
+  <td><a href="order.html?book=اللؤلؤ المرجان" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>تيسير الأعلام (taiseer ul a'alaam)</td>
+  <td><img src="تيسير الأعلام.jpg"></td>
+  <td><a href="order.html?book=تيسير الأعلام" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>حصن المسلم( hisnul muslim)</td>
+  <td><img src="حصن المسلم.jpg"></td>
+  <td><a href="order.html?book=حصن المسلم" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+      <td>جواهر البلاغة(jawaahir ul balaagah)</td>
+      <td><img src="جواهر البلاغة.jpg" alt="جواهر البلاغة"></td>
+ <td> <a href="order.html?book=جواهر البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+
+ <tr>
+      <td>تفسير الجلالين(tafseeru jalaalain)</td>
+      <td><img src="تفسير الجلالين.jpg" alt="تفسير الجلالين"></td>
+ <td> <a href="order.html?book=تفسير الجلالين" class="order-btn">Order</a> </td> 
+    </tr>
+
+
+ <tr>
+      <td>شرح العقيدة الطحاوية(sharh ul aqeedati ttohaawiyyay)</td>
+      <td><img src="شرح العقيدة الطحاوية.jpg" alt="شرح العقيدة الطحاوية"></td>
+ <td> <a href="order.html?book=شرح العقيدة الطحاوية" class="order-btn">Order</a> </td> 
+    </tr>
+
+<tr>
+  <td>سنن ابن ماجه (sunan ibn maaja)</td>
+  <td><img src="سنن ابن ماجه.jpg"></td>
+  <td><a href="order.html?book=سنن ماجه" class="order-btn">Order</a></td>
+</tr>
+
+
+
+ <tr>
+      <td>زاد المعاد(zaad ul ma ad)</td>
+      <td><img src="زاد المعاد.jpg" alt="زاد المعاد"></td>
+ <td> <a href="order.html?book=زاد المعاد" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>شرح قطر الندى(sharhu qatir u nadaa)</td>
+      <td><img src="شرح قطر الندى.jpg" alt="شرح قطر الندى"></td>
+ <td> <a href="order.html?book=شرح قطر الندى" class="order-btn">Order</a> </td> 
+    </tr>
+
+ <tr>
+      <td>الداء والدواء(al daa u wal dawaa u)</td>
+      <td><img src="الداء والدواء.jpg" alt="الداء والدواء"></td>
+ <td> <a href="order.html?book=الداء والدواء" class="order-btn">Order</a> </td> 
+    </tr>
+    
+
+ <tr>
+      <td>الموطأ(al muwato u)</td>
+      <td><img src="الموطأ.jpg" alt="الموطأ"></td>
+ <td> <a href="order.html?book=الموطأ" class="order-btn">Order</a> </td> 
+    </tr>
+
+
+<tr>
+  <td> (al mulaqos ul fiqhi)الملخص الفقهي</td>
+  <td><img src="الملخص الفقهي.jpg"></td>
+  <td><a href="order.html?book=الملخص الفقهي" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>فقه السنة (fiqh us sunnah)</td>
+  <td><img src="فقه السنة.jpg"></td>
+  <td><a href="order.html?book=فقه السنة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>إغاثة اللهفان (ihaathat ul luhfaan)</td>
+  <td><img src="إغاثة اللهفان.jpg"></td>
+  <td><a href="order.html?book=إغاثة اللهفان" class="order-btn">Order</a></td>
+</tr>
+
+
+     <tr>
+      <td>كتاب أسرار البلاغة(kitaab asraar ul balaagah)</td>
+      <td><img src="أسرار البلاغة.jpg" alt="كتاب أسرار البلاغة"></td>
+ <td> <a href="order.html?book=كتاب أسرار البلاغة" class="order-btn">Order</a> </td> 
+    </tr>
+    
+    <tr>
+  <td>آداب الدنيا والدين (aadaabu duniyaa waddin)</td>
+  <td><img src="آداب الدنيا والدين.jpg"></td>
+  <td><a href="order.html?book=آداب الدنيا والدين" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>التفسير الثمين (at tafseer u thameen)</td>
+  <td><img src="تفسير الثمين.jpg"></td>
+  <td><a href="order.html?book=التفسير الثمين" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الطب النبوي (al tibu nnabawwi)</td>
+  <td><img src="الطب النبوي.jpg"></td>
+  <td><a href="order.html?book=الطب النبوي" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>القراءة الراشدة (al qiraa atur rooshida)</td>
+  <td><img src="القراءة الراشدة.jpg"></td>
+  <td><a href="order.html?book=القراءة الراشدة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>سنن الترمذي (sunan tirmidhi)</td>
+  <td><img src="سنن الترمذي.jpg"></td>
+  <td><a href="order.html?book=سنن الترمذي" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>سنن النسائي (sunan tirmidhi)</td>
+  <td><img src="سنن النسائي.jpg"></td>
+  <td><a href="order.html?book=سنن النسائي" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>البرهان في علوم القرآن (alburhaan fee uluum il Quran)</td>
+  <td><img src="البرهان في علوم القرآن.jpg"></td>
+  <td><a href="order.html?book=اللرهان في علوم القرآن" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الفوائد (al fawaa id)</td>
+  <td><img src="الفوائد.jpg"></td>
+  <td><a href="order.html?book=الفوائد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>جامع العلوم والحكم (jaami ul uluum wal hikam)</td>
+  <td><img src="جامع العلوم والحكم.jpg"></td>
+  <td><a href="order.html?book=جامع العلوم والحكم" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الملخص في شرح كتاب التوحيد (al mulaqos fee sharhi kitaabi ttaoheed)</td>
+  <td><img src="الملخص في شرح كتاب التوحيد.jpg"></td>
+  <td><a href="order.html?book=الملخص في شرح كتاب التوحيد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الصارم البتار (as soorim ul battaar)</td>
+  <td><img src="الصارم البتار.jpg"></td>
+  <td><a href="order.html?book=الصارم البتار" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الصارم المسلول (as soorim ul masluul)</td>
+  <td><img src="الصارم المسلول.jpg"></td>
+  <td><a href="order.html?book=الصارم المسلول" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح المقدمة الأجرومية للعثيمين (sunan tirmidhi)</td>
+  <td><img src="شرح المقدمة الأجرومية للعثيمين.jpeg"></td>
+  <td><a href="order.html?book=شرح المقدمة الأجرومية للعثيمين" class="order-btn">Order</a></td>
+</tr>
+
+
+<tr>
+  <td>التطبيق الصرفي (at tatbeequ sorfi)</td>
+  <td><img src="التطبيق الصرفي.jpg"></td>
+  <td><a href="order.html?book=التطبيق الصرفي" class="order-btn">Order</a></td>
+</tr>
+
+
+<tr>
+  <td>النحو الميسر (an nahw ul muyasar)</td>
+  <td><img src="النحو الميسر.jpg"></td>
+  <td><a href="order.html?book=النحو الميسر" class="order-btn">Order</a></td>
+</tr>
+
+
+<tr>
+  <td>الحلال والحرام (al halaal wal haraam)</td>
+  <td><img src="الحلال والحرام.jpg"></td>
+  <td><a href="order.html?book=الحلال والحرام" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>بداية المجتهد ونهاية المقتصد (bidaayatul mujtahid wa nihaayatul muqtasid)</td>
+  <td><img src="بداية المجتهد.jpg"></td>
+  <td><a href="order.html?book=بداية المجتهد ونهاية المقتصد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الصواعق المرسلة (as sowaahiq ul mursila)</td>
+  <td><img src="الصواعق المرسلة.jpg"></td>
+  <td><a href="order.html?book=الصواعق المرسلة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الإرشاد إلى صحيح الاعتقاد (al irshaad ila sohih ilitqaad)</td>
+  <td><img src="الإرشاد.jpg"></td>
+  <td><a href="order.html?book=الإرشاد إلى صحيح الاعتقاد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>ملاك التأويل (malaaku tta'aweel)</td>
+  <td><img src="ملاك التأويل.jpg"></td>
+  <td><a href="order.html?book=ملاك التأويل" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>جامع المتون (jaami ul mutuun)</td>
+  <td><img src="جامع المتون.jpg"></td>
+  <td><a href="order.html?book=جامع المتون" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>دروس اللغة العربية (duruusu logat il arabiyyah)</td>
+  <td><img src="دروس اللغة العربية.jpg"></td>
+  <td><a href="order.html?book=دروس اللغة العربية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>القول المفيد على كتاب التوحيد (al qaol ul mufeed alaa kitaabi ttaoheed)</td>
+  <td><img src="القول المفيد على كتاب التوحيد.jpg"></td>
+  <td><a href="order.html?book=القول المفيد على كتاب التوحيد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح الأربعين النووية (sunan tirmidhi)</td>
+  <td><img src="شرح الأربعين النووية.jpg"></td>
+  <td><a href="order.html?book=شرح الأربعين النووية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الوجيز (al wajeez)</td>
+  <td><img src="الوجيز.jpg"></td>
+  <td><a href="order.html?book=الوجيز" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الشمائل المحمدية (ashamaail ul Muhammadiyah)</td>
+  <td><img src="الشمائل المحمدية.jpg"></td>
+  <td><a href="order.html?book=الشمائل المحمدية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>مباحث في علوم القرآن (mabaahith fee uluum ul Quran)</td>
+  <td><img src="مباحث في علوم القرآن.jpg"></td>
+  <td><a href="order.html?book=مباحث في علوم القرآن" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>تيسير الكريم الرحمن (taiseer ul kareem rahmaan)</td>
+  <td><img src="تيسير الكريم الرحمن.jpg"></td>
+  <td><a href="order.html?book=تيسير الكريم الرحمن" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>مختصر تفسير البغوي (muktasor tafseer il bbagowi)</td>
+  <td><img src="مختصر تفسير البغوي.jpg"></td>
+  <td><a href="order.html?book=مختصر تفسير البغوي" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>مختصر صحيح مسلم (muktasor sohih muslim)</td>
+  <td><img src="مختصر صحيح مسلم.jpg"></td>
+  <td><a href="order.html?book=مختصر صحيح مسلم" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>نور البيان (noor ul bayaan)</td>
+  <td><img src="نور البيان.jpg"></td>
+  <td><a href="order.html?book=نور البيان" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>هداية المستفيد (hidaayatul mustafeed)</td>
+  <td><img src="هداية المستفيد.jpg"></td>
+  <td><a href="order.html?book=هداية المستفيد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح كشف الشبهات (kashfu shubhaat)</td>
+  <td><img src="شرح كشف الشبهات.jpg"></td>
+  <td><a href="order.html?book=كشف الشبهات" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>متن تحفة الأطفال (matnu tuhfat il atfaal)</td>
+  <td><img src="متن تحفة الأطفال.jpg"></td>
+  <td><a href="order.html?book=متن تحفة الأطفال" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>متون طالب العلم (mutuunu taalib il ilmi)</td>
+  <td><img src="متون طالب العلم.jpg"></td>
+  <td><a href="order.html?book=متون طالب العلم" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>تسهيل الفرائض (tasheel ul faraa id)</td>
+  <td><img src="تسهيل الفرائض.jpg"></td>
+  <td><a href="order.html?book=تسهيل الفرائض" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>مفتاح دار السعادة (miftaahu daari sa aada)</td>
+  <td><img src="مفتاح دار السعادة.jpg"></td>
+  <td><a href="order.html?book=مفتاح دار السعادة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>جامع شروح كشف الشبهات (jaamiu shuruuhi kashfi shubhaat)</td>
+  <td><img src="كشف الشبهات.jpg"></td>
+  <td><a href="order.html?book=جامع شروح كشف الشبهات" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>صحيح مختصر تفسير ابن كثير (sohihu muktasori tafseer ibn kathir)</td>
+  <td><img src="صحيح مختصر تفسير ابن كثير.jpg"></td>
+  <td><a href="order.html?book=صحيح مختصر تفسير ابن كثير" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>منهج السالكين (manhaj us saalikeen)</td>
+  <td><img src="منهج السالكين.jpg"></td>
+  <td><a href="order.html?book=منهج السالكين" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح نواقض الإسلام (sharhu nawaakid il islam)</td>
+  <td><img src="نواقض الإسلام.jpg"></td>
+  <td><a href="order.html?book=شرح نواقض الإسلام" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>المنظومة الحائية (al manthuumat ul haa iya)</td>
+  <td><img src="المنظومة الحائية.jpg"></td>
+  <td><a href="order.html?book=المنظومة الحائية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>متن الأربعين النووية (matn ul arbaheen nawawiya)</td>
+  <td><img src="متن الأربعين النووية.jpg"></td>
+  <td><a href="order.html?book=متن الأربعين النووية" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>(sharihu fodlil islam)شرح فضل الإسلام</td>
+  <td><img src="شرح فضل الإسلام.jpg"></td>
+  <td><a href="order.html?book=شرح فضل الإسلام" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>إرشاد الفحول (irshaad il fuhool)</td>
+  <td><img src="إرشاد الفحول.jpg"></td>
+  <td><a href="order.html?book=إرشاد الفحول" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>الاستقامة</td>
+  <td><img src="الاستقامة.jpg"></td>
+  <td><a href="order.html?book=الاستقامة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>شرح ثلاثة أصول (sharihu thalaathati usuul)</td>
+  <td><img src="شرح ثلاثة أصول.jpg"></td>
+  <td><a href="order.html?book=شرح ثلاثة أصول" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>النذب في آداب طلب العلم</td>
+  <td><img src="النذب في آداب طلب العلم.jpg"></td>
+  <td><a href="order.html?book=النذب في آداب طلب العلم" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>كشف الأكنة (kashful akna)</td>
+  <td><img src="كشف الأكنة.jpg"></td>
+  <td><a href="order.html?book=كشف الأكنة" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>عقيدة التوحيد (aqeedatu taoheed)</td>
+  <td><img src="عقيدة التوحيد.jpg"></td>
+  <td><a href="order.html?book=عقيدة التوحيد" class="order-btn">Order</a></td>
+</tr>
+
+<tr>
+  <td>أصول الإيمان (usuul ul heemon)</td>
+  <td><img src="أصول الإيمان.jpg"></td>
+  <td><a href="order.html?book=أصول الإيمان" class="order-btn">Order</a></td>
+</tr>
+   
+  </table>
+
+
+<div style="
+  background:#ffffff;
+  margin:40px auto;
+  padding:25px;
+  width:90%;
+  max-width:600px;
+  text-align:center;
+  border-radius:12px;
+  border:1px solid #ccc;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
+">
+
+  <h3 style="color:#008080;">
+    📚 لم تجد الكتاب الذي تبحث عنه؟
+  </h3>
+
+  <p style="font-size:16px; color:#555;">
+    إذا لم تجد الكتاب المطلوب، تواصل معنا عبر واتساب وسنساعدك في توفيره بإذن الله
+  </p>
+
+  <a href="https://wa.me/2347057002272?text=السلام%20عليكم%20أبحث%20عن%20كتاب"
+     target="_blank"
+     style="
+       display:inline-block;
+       margin-top:15px;
+       padding:12px 20px;
+       background:#25D366;
+       color:white;
+       text-decoration:none;
+       border-radius:25px;
+       font-weight:bold;
+     ">
+      تواصل عبر واتساب
+  </a>
+
+</div>
+
+
+
+
+<!-- ORDER INSTRUCTIONS -->
+<section style="text-align:center; margin-top:30px;">
+    <h2>طريقة الطلب</h2>
+    <p>
+        يمكنك طلب أي كتاب عبر الواتساب أو عبر نموذج الطلب، وسيتم الرد عليك فورًا.
+    </p>
+</section>
+  <footer>
+    <p>&copy; 2026 مكتبة دار السلام الإسلامية</p>
+    <a class="whatsapp" href="https://wa.me/2347057002272" target="_blank">     <img src="whatsapp.png" alt="WhatsApp">
+    </a>
+  </footer>
+  
+  
+  <script>
+const searchInput = document.getElementById("searchInput");
+const noResult = document.getElementById("noResult");
+
+searchInput.addEventListener("keyup", function() {
+  const filter = searchInput.value.toLowerCase();
+  const rows = document.querySelectorAll("table tr");
+
+  let visibleCount = 0;
+
+  rows.forEach((row, index) => {
+    if (index === 0) return;
+
+    const text = row.textContent.toLowerCase();
+
+    if (text.includes(filter)) {
+      row.style.display = "";
+      visibleCount++;
+    } else {
+      row.style.display = "none";
+    }
+  });
+
+  noResult.style.display = visibleCount === 0 ? "block" : "none";
+});
+</script>
+
+</body>
+</html>

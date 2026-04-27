@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتب النحو العربي</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#f9f9f9;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER */
+header {
+  background:#008080;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* SEARCH */
+.search-box {
+  text-align:center;
+  margin:20px;
+}
+
+.search-box input {
+  padding:12px;
+  width:60%;
+  max-width:400px;
+  border:2px solid #008080;
+  border-radius:25px;
+  outline:none;
+}
+
+/* GRID */
+.book-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin:30px;
+}
+
+/* BOOK CARD */
+.book {
+  background:white;
+  width:160px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.book:hover {
+  transform:scale(1.05);
+}
+
+.book img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+/* BUTTON */
+.order-btn {
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 10px;
+  background:#008080;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:14px;
+}
+
+.order-btn:hover {
+  background:#005f5f;
+}
+
+/* NO RESULT */
+#noResult {
+  text-align:center;
+  color:#d00000;
+  font-weight:bold;
+  display:none;
+  margin-top:10px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>📚 كتب النحو العربي</h2>
+</header>
+
+
+
+<!-- BOOK GRID -->
+<div class="book-grid">
+
+  <div class="book">
+    <img src="النحو الوافي.jpg">
+    <p>النحو الوافي</p>
+    <a href="order.html?book=النحو الوافي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="النحو الميسر.jpg">
+    <p>النحو الميسر</p>
+    <a href="order.html?book=النحو الميسر" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="النحو التطبيقي.jpg">
+    <p>النحو التطبيقي</p>
+    <a href="order.html?book=النحو التطبيقي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="النحو الكافي.jpg">
+    <p>النحو الكافي</p>
+    <a href="order.html?book=النحو الكافي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="النحو الواضح.jpg">
+    <p>النحو الواضح</p>
+    <a href="order.html?book=النحو الواضح" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="كيف تتقن النحو.jpg">
+    <p>كيف تتقن النحو</p>
+    <a href="order.html?book=كيف تتقن النحو" class="order-btn">اطلب</a>
+  </div>
+  
+    <div class="book">
+    <img src="كيف تتقن الصرف.jpg">
+    <p>كيف تتقن الصرف</p>
+    <a href="order.html?book=كيف تتقن الصرف" class="order-btn">اطلب</a>
+  </div>
+  
+  <div class="book">
+    <img src="كيف تتقن الإملاء.jpg">
+    <p>كيف تتقن الإملاء</p>
+    <a href="order.html?book=كيف تتقن الإملاء" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="كيف تتقن الأجرومية.jpg">
+    <p>كيف تتقن الأجرومية</p>
+    <a href="order.html?book=كيف تتقن الأجرومية" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="كيف تتقن البلاغة.jpg">
+    <p>كيف تتقن البلاغة</p>
+    <a href="order.html?book=كيف تتقن البلاغة" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="كيف تتقن العروض.jpg">
+    <p>كيف تتقن العروض</p>
+    <a href="order.html?book=كيف تتقن العروض" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="الصرف الكافي.jpg">
+    <p>الصرف الكافي</p>
+    <a href="order.html?book=الصرف الكافي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="التطبيق النحوي.jpg">
+    <p>التطبيق النحوي</p>
+    <a href="order.html?book=التطبيق النحوي" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="التطبيق الصرفي.jpg">
+    <p>التطبيق الصرفي</p>
+    <a href="order.html?book=التطبيق الصرفي" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="أسرار البلاغة.jpg">
+    <p>كتاب أسرار البلاغة</p>
+    <a href="order.html?book=كتاب أسرار البلاغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="شرح المقدمة الأجرومية للعثيمين.jpeg">
+    <p>شرح المقدمة الأجرومية للعثيمين</p>
+    <a href="order.html?book=شرح المقدمة الأجرومية للعثيمين" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="جواهر البلاغة.jpg">
+    <p>جواهر البلاغة</p>
+    <a href="order.html?book=جواهر البلاغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="البلاغة الواضحة.jpg">
+    <p>البلاغة الواضحة</p>
+    <a href="order.html?book=البلاغة الواضحة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="الكافي في البلاغة.jpg">
+    <p>الكافي في البلاغة</p>
+    <a href="order.html?book=الكافي في البلاغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="قاموس المحيط.jpg">
+    <p>القاموس المحيط</p>
+    <a href="order.html?book=القاموس المحيط" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="مغني اللبيب.jpg">
+    <p>مغني اللبيب عن كتب الأعاريب</p>
+    <a href="order.html?book=مغني اللبيب عن كتب الأعاريب" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="مقامات الحريري.jpg">
+    <p>مقامات الحريري</p>
+    <a href="order.html?book=مقامات الحريري" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="شرح قطر الندى.jpg">
+    <p>شرح قطر الندى</p>
+    <a href="order.html?book=شرح قطر الندى" class="order-btn">اطلب</a>
+  </div>
+  
+  
+   <div class="book">
+    <img src="التطبيق النحوي.jpg">
+    <p>التطبيق النحوي</p>
+    <a href="order.html?book=التطبيق النحوي" class="order-btn">اطلب</a>
+  </div>
+  
+  
+   <div class="book">
+    <img src="شرح ابن عقيل.jpg">
+    <p>شرح ابن عقيل على ألفية بن مالك</p>
+    <a href="order.html?book=شرح ابن عقيل على ألفية بن مالك" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="أساس البلاغة.jpg">
+    <p>أساس البلاغة</p>
+    <a href="order.html?book=أساس البلاغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="جامع الدروس اللغة.jpg">
+    <p>جامع الدروس اللغة</p>
+    <a href="order.html?book=جامع الدروس اللغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="شرح ألفية ابن مالك للعثيمين.jpg">
+    <p>شرح ألفية ابن مالك للعثيمين</p>
+    <a href="order.html?book=شرح ألفية ابن مالك للعثيمين" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="مختار الصحاح.jpg">
+    <p>مختار الصحاح</p>
+    <a href="order.html?book=مختار الصحاح" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="شرح دروس البلاغة.jpg">
+    <p>شرح دروس البلاغة</p>
+    <a href="order.html?book=شرح دروس البلاغة" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="الكافي في شرح ألفية.jpg">
+    <p>الكافي في شرح ألفية ابن مالك</p>
+    <a href="order.html?book=الكافي في شرح ألفية ابن مالك" class="order-btn">اطلب</a>
+  </div>
+  
+  
+   </div>
+
+</body>
+</html>

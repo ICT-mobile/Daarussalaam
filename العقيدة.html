@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتب العقيدة</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#f9f9f9;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER */
+header {
+  background:#008080;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* SEARCH */
+.search-box {
+  text-align:center;
+  margin:20px;
+}
+
+.search-box input {
+  padding:12px;
+  width:60%;
+  max-width:400px;
+  border:2px solid #008080;
+  border-radius:25px;
+  outline:none;
+}
+
+/* GRID */
+.book-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin:30px;
+}
+
+/* BOOK */
+.book {
+  background:white;
+  width:160px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.book:hover {
+  transform:scale(1.05);
+}
+
+.book img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+/* BUTTON */
+.order-btn {
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 10px;
+  background:#008080;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+}
+
+.order-btn:hover {
+  background:#005f5f;
+}
+
+/* NO RESULT */
+#noResult {
+  text-align:center;
+  color:red;
+  font-weight:bold;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>📚 كتب العقيدة</h2>
+</header>
+
+
+<p id="noResult">لا توجد نتائج</p>
+
+<!-- BOOK GRID -->
+<div class="book-grid">
+
+  <div class="book">
+    <img src="شرح العقيدة الواسطية.jpg">
+    <p>شرح العقيدة الواسطية</p>
+    <a href="order.html?book=شرح العقيدة الواسطية" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="شرح ثلاثة أصول.jpg">
+    <p>شرح ثلاثة أصول</p>
+    <a href="order.html?book=شرح ثلاثة أصول" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="أصول الإيمان.jpg">
+    <p>شرح أصول الإيمان</p>
+    <a href="order.html?book=شرح أصول الإيمان" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="عقيدة التوحيد.jpg">
+    <p>عقيدة التوحيد</p>
+    <a href="order.html?book=عقيدة التوحيد" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src=" كشف الشبهات.jpg">
+    <p>جامع شروح كشف الشبهات</p>
+    <a href="order.html?book=جامع شروح كشف الشبهات" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="نواقض الإسلام.jpg">
+    <p>شرح نواقض الإسلام</p>
+    <a href="order.html?book=شرح نواقض الإسلام" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="شرح كشف الشبهات.jpg">
+    <p>شرح كشف الشبهات</p>
+    <a href="order.html?book=شرح كشف الشبهات" class="order-btn">اطلب</a>
+  </div>
+  
+ 
+   <div class="book">
+    <img src="القول المفيد على كتاب التوحيد.jpg">
+    <p>القول المفيد على كتاب التوحيد</p>
+    <a href="order.html?book=القول المفيد على كتاب التوحيد" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="الإرشاد.jpg">
+    <p>الإرشاد إلى صحيح الاعتقاد</p>
+    <a href="order.html?book=الإرشاد إلى صحيح الاعتقاد" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="الصواعق المرسلة.jpg">
+    <p>الصواعق المرسلة</p>
+    <a href="order.html?book=الصواعق المرسلة" class="order-btn">اطلب</a>
+  </div>
+
+ <div class="book">
+    <img src="شرح العقيدة الطحاوية.jpg">
+    <p>شرح العقيدة الطحاوية</p>
+    <a href="order.html?book=شرح العقيدة الطحاوية" class="order-btn">اطلب</a>
+  </div>
+
+ <div class="book">
+    <img src="فتح المجيد.jpg">
+    <p>فتح المجيد</p>
+    <a href="order.html?book=فتح المجيد" class="order-btn">اطلب</a>
+  </div>
+
+ <div class="book">
+    <img src="الملخص في شرح كتاب التوحيد.jpg">
+    <p>الملخص في شرح كتاب التوحيد</p>
+    <a href="order.html?book=الملخص في شرح كتاب التوحيد" class="order-btn">اطلب</a>
+  </div>
+
+</div>
+
+</body>
+</html>

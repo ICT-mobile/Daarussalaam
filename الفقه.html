@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتب الفقه</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#f9f9f9;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER */
+header {
+  background:#008080;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* SEARCH */
+.search-box {
+  text-align:center;
+  margin:20px;
+}
+
+.search-box input {
+  padding:12px;
+  width:60%;
+  max-width:400px;
+  border:2px solid #008080;
+  border-radius:25px;
+  outline:none;
+}
+
+/* GRID */
+.book-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin:30px;
+}
+
+/* BOOK CARD */
+.book {
+  background:white;
+  width:160px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.book:hover {
+  transform:scale(1.05);
+}
+
+.book img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+/* BUTTON */
+.order-btn {
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 10px;
+  background:#008080;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:14px;
+}
+
+.order-btn:hover {
+  background:#005f5f;
+}
+
+/* NO RESULT */
+#noResult {
+  text-align:center;
+  color:red;
+  font-weight:bold;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>📚 كتب الفقه</h2>
+</header>
+
+<!-- SEARCH -->
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="🔍 ابحث عن كتاب فقهي...">
+</div>
+
+<p id="noResult">لا توجد نتائج</p>
+
+<!-- BOOK GRID -->
+<div class="book-grid">
+
+  <div class="book">
+    <img src="فقه السنة.jpg">
+    <p>فقه السنة</p>
+    <a href="order.html?book=فقه السنة" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="الملخص الفقهي.jpg">
+    <p>الملخص الفقهي</p>
+    <a href="order.html?book=الملخص الفقهي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="بداية المجتهد.jpg">
+    <p>بداية المجتهد</p>
+    <a href="order.html?book=بداية المجتهد" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="منهج السالكين.jpg">
+    <p>منهج السالكين</p>
+    <a href="order.html?book=منهج السالكين" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="تسهيل الفرائض.jpg">
+    <p>تسهيل الفرائض</p>
+    <a href="order.html?book=تسهيل الفرائض" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="هداية المستفيد.jpg">
+    <p>هداية المستفيد</p>
+    <a href="order.html?book=هداية المستفيد" class="order-btn">اطلب</a>
+  </div>
+
+   <div class="book">
+    <img src="الوجيز.jpg">
+    <p>الوجيز</p>
+    <a href="order.html?book=الوجيز" class="order-btn">اطلب</a>
+  </div>
+  
+ <div class="book">
+    <img src="الحلال والحرام.jpg">
+    <p>الحلال والحرام</p>
+    <a href="order.html?book=الحلال والحرام" class="order-btn">اطلب</a>
+  </div>
+
+ <div class="book">
+    <img src="سبل السلام.jpg">
+    <p>سبل السلام</p>
+    <a href="order.html?book=سبل السلام" class="order-btn">اطلب</a>
+  </div>
+
+</div>
+
+
+</body>
+</html>

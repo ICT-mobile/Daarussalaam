@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>القرآن الكريم</title>
+
+<style>
+body {
+  font-family: Arial;
+  background:#f9f9f9;
+  margin:0;
+  padding:0;
+}
+
+/* HEADER */
+header {
+  background:#008080;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+
+/* SEARCH */
+.search-box {
+  text-align:center;
+  margin:20px;
+}
+
+.search-box input {
+  padding:12px;
+  width:60%;
+  max-width:400px;
+  border:2px solid #008080;
+  border-radius:25px;
+  outline:none;
+}
+
+/* GRID */
+.book-grid {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+  margin:30px;
+}
+
+/* BOOK */
+.book {
+  background:white;
+  width:160px;
+  padding:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  text-align:center;
+  box-shadow:0 2px 8px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.book:hover {
+  transform:scale(1.05);
+}
+
+.book img {
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-radius:5px;
+}
+
+/* BUTTON */
+.order-btn {
+  display:inline-block;
+  margin-top:8px;
+  padding:6px 10px;
+  background:#008080;
+  color:white;
+  text-decoration:none;
+  border-radius:5px;
+  font-size:14px;
+}
+
+.order-btn:hover {
+  background:#005f5f;
+}
+
+/* NO RESULT */
+#noResult {
+  text-align:center;
+  color:red;
+  font-weight:bold;
+  display:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>📖 القرآن الكريم</h2>
+</header>
+
+
+<p id="noResult">لا توجد نتائج</p>
+
+<!-- BOOK GRID -->
+<div class="book-grid">
+
+  <div class="book">
+    <img src="القرآن الكريم.jpg">
+    <p>مصحف المدينة النبوية</p>
+    <a href="order.html?book=مصحف المدينة" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="تفسير القرآن العظيم.jpg">
+    <p>تفسير القرآن العظيم</p>
+    <a href="order.html?book=تفسير القرآن العظيم" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="مختصر تفسير البغوي.jpg">
+    <p>مختصر تفسير البغوي</p>
+    <a href="order.html?book=مختصر تفسير البغوي" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="تفسير الثمين.jpg">
+    <p>التفسير الثمين</p>
+    <a href="order.html?book=التفسير الثمين" class="order-btn">اطلب</a>
+  </div>
+
+  <div class="book">
+    <img src="تفسير الجلالين.jpg">
+    <p>تفسير الجلالين</p>
+    <a href="order.html?book=تفسير الجلالين" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="مباحث في علوم القرآن.jpg">
+    <p>مباحث في علوم القرآن</p>
+    <a href="order.html?book=مباحث في علوم القرآن" class="order-btn">اطلب</a>
+  </div>
+  
+   <div class="book">
+    <img src="صحيح مختصر تفسير ابن كثير.jpg">
+    <p>صحيح مختصر تفسير ابن كثير</p>
+    <a href="order.html?book=صحيح مختصر تفسير ابن كثير" class="order-btn">اطلب</a>
+  </div>
+ 
+  <div class="book">
+    <img src="تيسير الكريم الرحمن.jpg">
+    <p>تيسير الكريم الرحمن</p>
+    <a href="order.html?book=تيسير الكريم الرحمن" class="order-btn">اطلب</a>
+  </div> 
+  
+   <div class="book">
+    <img src="البرهان في علوم القرآن.jpg">
+    <p>البرهان في علوم القرآن</p>
+    <a href="order.html?book=البرهان في علوم القرآن" class="order-btn">اطلب</a>
+  </div>
+  
+ <div class="book">
+    <img src="ملاك التأويل.jpg">
+    <p>ملاك التأويل</p>
+    <a href="order.html?book=ملاك التأويل" class="order-btn">اطلب</a>
+  </div>
+
+</div>
+
+</body>
+</html>
